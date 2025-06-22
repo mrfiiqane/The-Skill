@@ -32,7 +32,7 @@
             }
             header{
                 background-color: var(--primary-color);
-                height: 90vh;
+                height: 95vh;
                 width: 100vw;
             }
 
@@ -590,14 +590,33 @@
 
 
             @media (max-width: 768px){
-                h1{
-                    font-size: 1.5rem;
+                .Courses-Container .Courses-category{
+                display: grid;
+                grid-template-columns: 1fr;  
+                gap: 20px;
+            }
+                .course-container{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                  
+                    height: auto;
                 }
-                h1{
-                    font-size: 1.3rem;
+                .course-container .course-box1,
+                .course-container .course-box2,
+                .course-container .course-box3,
+                .course-container .course-box4{
+                    width: 90%;
+                    height: auto;
+                    
+
                 }
-                p{
-                    font-size: 1.3rem;
+                .course-container h1{
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+                .course-container h4{
+                    font-size: 1rem;
+                    text-align: center;
                 }
 
             }
