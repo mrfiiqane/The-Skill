@@ -442,8 +442,9 @@
 
             .New-Courses{
                 width: 90%;
-                height: auto;
+                height: 800px;
                 margin: 2rem auto;
+              
        
         
             
@@ -475,130 +476,309 @@
 
             }
             .buton .buton1{
-                
-                padding: 20px 40px;
-                width: 50px;
+                width: 100px;
                 text-align: center;
-                font-size: 14px;
-                background-color: var(--box-background-color);
-                color: var(--text-color2);
-                border: none;
-                padding: 15px 50px;
+                font-size: 16px;
+                
+                border: 4 solid #333;
+                border-radius: 5px;
                 font-family: 'Trebuchet MS', Arial, sans-serif;
                 height: auto;
+           
+                padding: 10px 20px;
+               
+                cursor: pointer;
+                
+                background-color: var(--box-background-color);
+                color: var(--text-color2);
 
             }
             .buton .buton2{
-                padding: 20px 40px;
-                width: 50px;
+                width: 100px;
                 text-align: center;
-                font-size: 14px;
-                background-color: var(--background-color);
-                color: var(--text-color1);
+                font-size: 16px;
+                
                 border: 4 solid #333;
                 border-radius: 5px;
-                padding: 15px 50px;
                 font-family: 'Trebuchet MS', Arial, sans-serif;
                 height: auto;
+           
+                padding: 10px 20px;
+                background-color: var(--background-color);
+                color: var(--text-color1);
+                cursor: pointer;
+               
 
             }
             .buton .buton3{
-                padding: 20px 40px;
-                width: 50px;
+                width: 100px;
                 text-align: center;
                 padding: 15px 50px;
-                font-size: 14px;
-                background-color: var(--background-color);
-                color: var(--text-color1);
+                font-size: 16px;
+                
                 border: 4 solid #333;
                 border-radius: 5px;
                 font-family: 'Trebuchet MS', Arial, sans-serif;
                 height: auto;
 
-            }
+                padding: 10px 20px;
+                background-color: var(--background-color);
+                color: var(--text-color1);
+                cursor: pointer;
 
-            .butons1{
-                width: 50px;
-                height: 50px;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-                padding: 15px 50px;
-                font-size: 14px;
-                background-color: var(--box-background-color);
-                color: var(--text-color2);
-                border: none;
-                border-radius: 5px;
-                font-family: 'Arial', sans-serif;
             }
 
 
             .course-container{
                 display: grid;
-                grid-template-columns: repeat(4, 330px);
-                gap: 10px;
+                grid-template-columns: repeat(4, 340px);
+                
                 margin-top: 2rem;
-                height: auto;
+               
+                justify-content: space-around;
+            }
+
+            .course-container .pic{
+                width: 100%;
+                height: 50%;
+            
             }
             .course-container .course-box1{
-              
-                box-shadow: 0 4px 6px rgb(0,0,0,0.2);
+             
+                box-shadow: 0 5px 10px rgb(0,0,0,0.2);
                 border-radius: 8px;
             }
             .course-container .course-box2{
              
-                box-shadow: 0 4px 6px rgb(0,0,0,0.2);
+                box-shadow: 0 5px 10px rgb(0,0,0,0.2);
                 border-radius: 8px;
             }
             .course-container .course-box3{
-           
-                
-                box-shadow: 0 4px 6px rgb(0,0,0,0.2);
+             
+                box-shadow: 0 5px 10px rgb(0,0,0,0.2);
                 border-radius: 8px;
             }
             .course-container .course-box4{
-        
-                box-shadow: 0 4px 6px rgb(0,0,0,0.2);
+             
+                box-shadow: 0 5px 10px rgb(0,0,0,0.2);
                 border-radius: 8px;
             }
 
-            .course-container .course-box1, span{
-             
-                font-size: 14px;
-            
+                
+            .course-box1 .teacher{
+                display: inline-flex;
+                gap: 10px;
                
+            }
+            .course-box2 .teacher{
+                display: inline-flex;
+                gap: 10px;
+               
+            }
+            .course-box3 .teacher{
+                display: inline-flex;
+                gap: 10px;
+               
+            }
+            .course-box4 .teacher{
+                display: inline-flex;
+                gap: 10px;
+               
+            }
+        
+            .course-container .course-box1 h4{
+                font-size: 14px;
+                font-weight: lighter;
+                color: #333;
+    
+                align-items: center;
+                justify-content: start;
+                margin: 5px 15px;
+                padding: 5px 10px;
+                
+                margin-bottom: 10px;
+                
+            }
+            .course-container .course-box2 h4{
+                font-size: 14px;
+                font-weight: lighter;
+                color: #333;
+          
+                align-items: center;
+                justify-content: start;
+                margin: 5px 15px;
+                padding: 5px 10px;
+                
+                margin-bottom: 10px;
+                
+            }
+            .course-container .course-box3 h4{
+                font-size: 14px;
+                font-weight: lighter;
+                color: #333;
+          
+                align-items: center;
+                justify-content: start;
+                margin: 5px 15px;
+                padding: 5px 10px;
+                
+                margin-bottom: 10px;
+                
+            }
+            .course-container .course-box4 h4{
+                font-size: 14px;
+                font-weight: lighter;
+                color: #333;
+          
+                align-items: center;
+                justify-content: start;
+                margin: 5px 15px;
+                padding: 5px 10px;
+                
+                margin-bottom: 10px;
+                
+            }
+            .course-container .course-box1 h6{
+            
+                font-size: 12px;
+                font-weight: lighter;
+                color: #333;
+                align-items: center;
+                justify-content: end;
+                margin: 5px 15px;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+                margin-left: 80px;
+            }
+            .course-container .course-box2 h6{
+            
+                font-size: 12px;
+                font-weight: lighter;
+                color: #333;
+                align-items: center;
+                justify-content: end;
+                margin: 5px 15px;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+                margin-left: 80px;
+            }
+            .course-container .course-box3 h6{
+            
+                font-size: 12px;
+                font-weight: lighter;
+                color: #333;
+                align-items: center;
+                justify-content: end;
+                margin: 5px 15px;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+                margin-left: 80px;
+            }
+            .course-container .course-box4 h6{
+            
+                font-size: 12px;
+                font-weight: lighter;
+                color: #333;
+                align-items: center;
+                justify-content: end;
+                margin: 5px 15px;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+                margin-left: 80px;
             }
             
             .course-container h1{
                 display: block;
                 font-weight: 600;
-                background-color: red;
-           
-               
-             
+         
+                margin: 5px 15px;
+                padding: 5px 10px;
                 text-align: start;
-                font-size: 22px;
+                font-size: 19px;
+            }
+            .course-icon{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
             }
 
-            .course-container .pic{
-                width: 100%;
-                height: 40%;
+            .horizontal-line{
+                width: 90%;
+                height: 4px;
+                margin: 10px auto;
+                justify-content: space-around;
+                background-color: var(--primary-color);
             }
 
+            .price-buy{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+       
+            .price-buy h4{
+          
+                font-size: 12px;
+                font-weight: lighter;
+                color: var(--box-background-color); 
+                margin: 5px 15px;
+                padding: 5px 10px;  
             
+         
+                
 
+            }
+            .price-buy .buy{
+                background-color: #093FB4;
+                font-size: 10px;
+                font-weight: lighter;
+                color: var(--text-color2); 
+                margin: 5px 10px;
+                padding: 4px 15px;  
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            
+            }
+
+            footer{
+                width: 90%;
+                height: auto;
+                margin-top: 30px;
+
+            }
+          
+            .butons4{
+               
+                width: 50%;
+                height: auto;
+                font-size: 14px;
+                padding: 10px 20px;
+                text-align: center;
+                color: var(--text-color2);
+                background-color: var(--box-background-color);
+                cursor: pointer;
+                font-family: 'Trebuchet MS', Arial, sans-serif;
+                
+                border: 4 solid #333;
+                border-radius: 5px;
+                justify-content: center;
+                align-items: center;
+              
+             
+            }
 
 
             @media (max-width: 768px){
                 .Courses-Container .Courses-category{
-                display: grid;
-                grid-template-columns: 1fr;  
-                gap: 20px;
-            }
+                    display: grid;
+                    grid-template-columns: 1fr;  
+                    gap: 20px;
+                }
                 .course-container{
                     display: grid;
                     grid-template-columns: 1fr;
-                  
+                    gap: 20px;
                     height: auto;
                 }
                 .course-container .course-box1,
@@ -620,6 +800,18 @@
                 }
 
             }
+
+
+            
+         
+
+            
+
+            
+
+
+
+
                 
         
             
@@ -788,62 +980,102 @@
                     <button class="buton1">All</button>
                     <button class="buton2">Paid</button>
                     <button class="buton3">Free</button>
+                    
                 </div>
 
                 <div class="course-container">
+                    
                     <div class="course-box1">
                         <img src="https://www.shutterstock.com/image-photo/smiling-african-man-using-laptop-600nw-2294125691.jpg" class="pic" alt="pic">
-                        <h4>loslio lexsandera <span>5.0(1k)</span></h4>
-                        <h1>Complete Web Developer co....</h1>
+                        <div class="teacher">
+                            <h4>Mohamed</h4>
+                            <h6><i class="fa-solid fa-star"></i> 4.5(5.2k)</h6>
+                        </div>
+                        <h1>Complete Introduction of Com...</h1>
                         <div class="course-icon">
-                            <h5>120</h5>
-                            <h5>1503</h5>
-                            <h5>8hr 30min</h5>
+                            <h5><i class="fa-solid fa-book-open"></i> 1150</h5>
+                            <h5><i class="fa-solid fa-graduation-cap"></i> 600 </h5>
+                            <h5><i class="fa-solid fa-clock"></i> 3hr 30min</h5>
 
-                        </div>icon
+                        </div>
+                        <div class="horizontal-line"></div>
+                        <div class="price-buy">
+                            <h4> $0.00</h4>
+                            <button class="buy">Free</button>
+                        </div> 
                     </div>
                     <div class="course-box2">
-                        <img src="https://www.shutterstock.com/image-photo/smiling-african-man-using-laptop-600nw-2294125691.jpg" class="pic" alt="pic">
-                        <h4>loslio lexsandera <span>5.0(1k)</span></h4>
-                        <h1>Complete Web Developer co....</h1>
+                        <img src="https://www.rmcad.edu/wp-content/uploads/2024/04/shutterstock_434383288.jpg" class="pic" alt="pic">
+                        <div class="teacher">
+                            <h4>joon cooper </h4>
+                            <h6><i class="fa-solid fa-star"></i> 4.8(1k)</h6>
+                        </div>
+                        <h1>Complete Graphic Design co....</h1>
                         <div class="course-icon">
-                            <h5>120</h5>
-                            <h5>1503</h5>
-                            <h5>8hr 30min</h5>
+                            <h5><i class="fa-solid fa-book-open"></i> 1200</h5>
+                            <h5><i class="fa-solid fa-graduation-cap"></i> 203</h5>
+                            <h5><i class="fa-solid fa-clock"></i> 15hr 20min</h5>
 
-                        </div>icon
+                        </div>
+                        <div class="horizontal-line"></div>
+                        <div class="price-buy">
+                            <h4> $90.00</h4>
+                            <button class="buy">Paid</button>
+                        </div>
+                  
                     </div>
                     <div class="course-box3">
-                        <img src="https://www.shutterstock.com/image-photo/smiling-african-man-using-laptop-600nw-2294125691.jpg" class="pic" alt="pic">
-                        <h4>loslio lexsandera <span>5.0(1k)</span></h4>
-                        <h1>Complete Web Developer co....</h1>
+                        <img src="https://blog.wei.com/hubfs/network.jpg" class="pic" alt="pic">
+                        <div class="teacher">
+                            <h4>loslio sandera </h4>
+                            <h6><i class="fa-solid fa-star"></i> 5.0(1.1k)</h6>
+                        </div>
+                        <h1>Complete Network Fundema....</h1>
                         <div class="course-icon">
-                            <h5>120</h5>
-                            <h5>1503</h5>
-                            <h5>8hr 30min</h5>
+                            <h5><i class="fa-solid fa-book-open"></i> 1504</h5>
+                            <h5><i class="fa-solid fa-graduation-cap"></i> 1003</h5>
+                            <h5><i class="fa-solid fa-clock"></i> 1hr 30min</h5>
 
-                        </div>icon
+                        </div>
+                        <div class="horizontal-line"></div>
+                        <div class="price-buy">
+                            <h4> $20.00</h4>
+                            <button class="buy">Paid</button>
+                        </div> 
                     </div>
                     <div class="course-box4">
-                        <img src="https://www.shutterstock.com/image-photo/smiling-african-man-using-laptop-600nw-2294125691.jpg" class="pic" alt="pic">
-                        <h4>loslio lexsandera <span>5.0(1k)</span></h4>
+                        <img src="https://cdn.prod.website-files.com/6344c9cef89d6f2270a38908/673f2a3b44c1ed4901bb43bb_6386328bea96dffacc89946b_d1.webp" class="pic" alt="pic">
+                        <div class="teacher">
+                            <h4>Alex willian</h4>
+                            <h6><i class="fa-solid fa-star"></i> 5.0(12k)</h6>
+                        </div>
                         <h1>Complete Web Developer co....</h1>
                         <div class="course-icon">
-                            <h5>120</h5>
-                            <h5>1503</h5>
-                            <h5>8hr 30min</h5>
+                            <h5><i class="fa-solid fa-book-open"></i> 12030</h5>
+                            <h5><i class="fa-solid fa-graduation-cap"></i> 1107</h5>
+                            <h5><i class="fa-solid fa-clock"></i> 19hr 22min</h5>
 
-                        </div>icon
+                        </div>
+                        <div class="horizontal-line"></div>
+                        <div class="price-buy">
+                            <h4> $100.00</h4>
+                            <button class="buy">paid</button>
+                        </div>
+                        
                     </div>
-                </div>
-                <button class="butons1">All</button>
-                    
-            
-
-
+                    <footer>
+                        <button class="butons4">View All</button>
+                    </footer>  
 
 
             </section>
+
+                
+
+          
+                
+                
+                
         
         </main>
       
