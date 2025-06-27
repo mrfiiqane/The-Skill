@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="describtion" content="This website E-learning platform you can learn everything skills on demand now ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>THE-SKILL</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="responsive-mobile" href="./responsive/mobile.css">
+        
+        <style>
+            :root{
+                --primary-color: #EECAD5;
+                --box-background-color: #093FB4;
+                --background-color: white;
+                --text-color1: black;
+                --text-color2: white;
+                --text-color3: blue;    
+            }
+           
+
+
+            .New-Courses{
+                width: 90%;
+                height: 750px;
+                margin: 1rem auto;
+            
+            }  
+            .New-Courses h2, h1{
+                text-align: center;
+                color: var(--text-color1);
+                margin: 20px auto;
+            }
+            .New-Courses h2{
+                font-weight: lighter;
+                font-size: 1.5rem;
+                
+            }
+            .New-Courses h1{
+                font-weight: 600;
+                font-size: 2.5rem;
+                
+            }
+            .New-Courses .buton{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+            .buton .buton{
+                width: 100px;
+                text-align: center;
+                font-size: 16px;
+                border: 4 solid #333;
+                border-radius: 5px;
+                font-family: 'Trebuchet MS', Arial, sans-serif;
+                height: auto;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+            .buton.bt1{
+                background-color: var(--primary-color);
+                color: var(--text-color2);
+            }
+            .buton.bt2{
+                background-color: var(--background-color);
+                color: var(--text-color1);
+            }
+            .buton.bt3{
+                background-color: var(--background-color);
+                color: var(--text-color1);
+            }
+
+
+            .New-Courses-container{
+                display: flex;
+                
+                width: 55%;
+                height: auto;
+                gap: 15px;
+                justify-content: space-between;
+                margin-top: 30px;
+            }
+            .New-Courses-container .pic{
+                width: 100%;
+                height: 50%;
+            }
+            .New-Courses-container .course-box{
+                box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+                border-radius: 8px;
+            }   
+            .course-box .teacher{
+                width: 100% ;
+                display: inline-flex;
+                justify-content: space-around;   
+            }
+       
+            .New-Courses-container .course-box h4, h6, h1{
+                align-items: center;
+                color: #333;
+                margin: 5px 15px;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+                font-weight: lighter;
+
+            }
+            .New-Courses-container .course-box h4{
+                font-size: 14px;
+                align-items: center;
+                justify-content: start;     
+            }
+            .New-Courses-container .course-box h6{
+                font-size: 12px;
+                justify-content: end;
+                margin-left: 80px;
+            }
+            .New-Courses-container h1{
+                display: block;
+                font-weight: 600;
+                text-align: end;
+                font-size: 22px;
+            }
+            .course-icon{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .horizontal-line{
+                width: 90%;
+                height: 4px;
+                margin: 10px auto;
+                justify-content: space-around;
+                background-color: var(--primary-color);
+            }
+            .price-buy{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-size: 12px;
+                font-weight: lighter;
+            }
+            .price-buy h4{
+                margin: 5px 15px;
+                padding: 5px 10px;        
+
+            }
+            .price-buy .buy{
+                background-color: var(--box-background-color);
+                color: var(--text-color2); 
+                margin: 5px 10px;
+                padding: 4px 15px;  
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            footer{
+                width: 100%;
+                text-align: center;
+                height: auto;
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+            footer .butons4{
+                width: 100px;
+                height: auto;
+                font-size: 14px;
+                padding: 10px 20px;
+                color: var(--text-color2);
+                background-color: var(--box-background-color);
+                cursor: pointer;
+                font-family: 'Trebuchet MS', Arial, sans-serif;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+
+                  
+        </style>
+
+    </head>
+    <body>
+
+            <section class="New-Courses">
+                <h2>Our New Courses</h2>
+                <h1>Learn Best Things</h1>
+
+                <div class="buton">
+                    <button class="buton   bt1"><a href="./index.html">All</a> </button>
+                    <button class="buton   bt2"><a href="./paid.html">Paid</a> </button>
+                    <button class="buton   bt3"><a href="./index.html">Free</a> </button>
+                    
+                </div>
+
+                <div class="New-Courses-container">
+                    <div class="course-box">
+                        <img src="https://www.shutterstock.com/image-photo/smiling-african-man-using-laptop-600nw-2294125691.jpg" class="pic" alt="pic">
+                        <div class="teacher">
+                            <h4>Mohamed</h4>
+                            <h6><i class="fa-solid fa-star"></i> 4.5(5.2k)</h6>
+                        </div>
+                        <h1>Complete Introduction of Com...</h1>
+                        <div class="course-icon">
+                            <h5><i class="fa-solid fa-book-open"></i> 1150</h5>
+                            <h5><i class="fa-solid fa-graduation-cap"></i> 600 </h5>
+                            <h5><i class="fa-solid fa-clock"></i> 3hr 30min</h5>
+
+                        </div>
+                        <div class="horizontal-line"></div>
+                        <div class="price-buy">
+                            <h4> $0.00</h4>
+                            <button class="buy">Free</button>
+                        </div> 
+                    </div>
+                    <div class="course-box">
+                        <img src="https://www.shutterstock.com/image-photo/smiling-african-man-using-laptop-600nw-2294125691.jpg" class="pic" alt="pic">
+                        <div class="teacher">
+                            <h4>Mohamed</h4>
+                            <h6><i class="fa-solid fa-star"></i> 4.5(5.2k)</h6>
+                        </div>
+                        <h1>Complete Introduction of Com...</h1>
+                        <div class="course-icon">
+                            <h5><i class="fa-solid fa-book-open"></i> 1150</h5>
+                            <h5><i class="fa-solid fa-graduation-cap"></i> 600 </h5>
+                            <h5><i class="fa-solid fa-clock"></i> 3hr 30min</h5>
+
+                        </div>
+                        <div class="horizontal-line"></div>
+                        <div class="price-buy">
+                            <h4> $0.00</h4>
+                            <button class="buy">Free</button>
+                        </div> 
+                    </div>
+                    
+
+            </section>
+
+        </main>
+        <footer>
+            <button class="butons4">View All</button>
+        </footer>  
+      
+
+    </body>
+</html>
