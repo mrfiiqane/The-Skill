@@ -527,7 +527,10 @@
                 margin-top: 30px;
             }
             .image2{
+                display: block;
                 width: 100%;
+                height: auto;
+                margin-bottom: 20px;
                 padding: 20px auto;
                 margin: auto;
             }
@@ -535,6 +538,7 @@
 
 
             .text-container{
+                display: block;
                 position: relative;
                 width: 100%;
                 margin: 10px;
@@ -590,7 +594,7 @@
             }
             .search-Container .btn1{
                 position: absolute;
-                top: 20.4rem;
+                top: 18.4rem;
                 left: 0.8rem;
                 width: 60px;
                 font-size: 1rem;
@@ -600,7 +604,7 @@
             }
             .text-container .vedio{
                 position: absolute;
-                top: 16.8rem;
+                top: 14.4rem;
                 left: 7.6rem;
                 width: 25px;
                 
@@ -631,8 +635,8 @@
                 margin-top: 150px;
             }
             .service-container{
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                display: block;
+                margin-bottom: 20px;
                 gap: 5px;
             }
 
@@ -654,7 +658,7 @@
             /* qeybta Catogories courses ka */
             .Courses-category-container{
                 width: 100%;
-                margin: 25px auto;
+                margin: 50px auto;
             
             }
             .Courses-category-container h1{
@@ -662,15 +666,13 @@
                 margin: 15px auto;
             }
             .Courses-category-container .Courses-category{
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                margin: 2px auto;
-                gap: 10px;
+                display: block;
             }
             .Courses-category .course{
                 width: 90%;
                 margin:  auto;
                 padding: 20px auto;
+                margin-bottom: 20px;
             }
             .Courses-category .course h2, p{
                 padding: 0.2rem 0.5rem;
@@ -689,13 +691,18 @@
                 width: 90%;
                 height: auto;
                 margin: 20px auto;
+
             
             }  
-            .New-Courses-container{
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 10px;
-                margin-top: 50px;
+            .New-Courses-container .course-box{
+                display: block;
+                margin-bottom: 20px;
+                height: 440px;
+                
+            }
+            .buton .buton{
+                border-radius: 8px;
+                padding: 10px;
             }
             .New-Courses h2, h1{
                 margin: 20px auto;
@@ -731,6 +738,15 @@
             .price-buy{
                 font-size: 10px;
             
+            }
+            
+
+            /* footerka */
+            footer{
+                display: block;
+            }
+            footer .butons4{
+                border-radius: 8px;
             }
 
           
@@ -903,9 +919,9 @@
                 <h1>Learn Best Things</h1>
 
                 <div class="buton">
-                    <button class="buton   bt1"><a href="./viewAll.html" target="_blank">All</a> </button>
-                    <button class="buton   bt2"><a href="./paid.html" target="_blank">Paid</a> </button>
-                    <button class="buton   bt3"><a href="./free.html" target="_blank">Free</a> </button>
+                    <button class="buton   bt1"><a  style="color: antiquewhite; text-decoration: none;" href="./viewAll.html" target="_blank">All</a> </button>
+                    <button class="buton   bt2"><a  style= "text-decoration: none;" href="./paid.html" target="_blank">Paid</a> </button>
+                    <button class="buton   bt3"><a  style="text-decoration: none; " href="./free.html" target="_blank">Free</a> </button>
                     
                 </div>
 
@@ -993,7 +1009,7 @@
 
         </main>
         <footer>
-            <button class="butons4">View All</button>
+            <button class="butons4"><a style="color: wheat; text-decoration: none;" href="./viewAll.html"> View All</a></button>
         </footer>  
       
 
