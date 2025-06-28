@@ -1,132 +1,250 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="describtion" content="This website E-learning platform you can learn everything skills on demand now ">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>THE-SKILL</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="responsive-mobile" href="./responsive/mobile.css">
-        
-        <style>
-            :root{
-                --primary-color: #EECAD5;
-                --box-background-color: #093FB4;
-                --background-color: white;
-                --text-color1: black;
-                --text-color2: white;
-                --text-color3: blue;    
-            }
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body {
-                font-family: Arial, sans-serif;
-                overflow-x: hidden;
-                line-height: 1.6;
-            }
-            header{
-                background-color: var(--primary-color);
-                height: 95vh;
-                width: 100vw;
-            }
 
-            .header-box, .nav-bar, .btn-primary1{
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-            }
-            .header-box{
-                /* position: fixed;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="describtion" content="This website E-learning platform you can learn everything skills on demand now ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE-SKILL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="responsive-mobile" href="./responsive/mobile.css">
+
+    <style>
+        :root {
+            --primary-color: #EECAD5;
+            --box-background-color: #093FB4;
+            --background-color: white;
+            --text-color1: black;
+            --text-color2: white;
+            --text-color3: blue;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            height: 95vh;
+            width: 100vw;
+        }
+
+        .header-box,
+        .nav-bar,
+        .btn-primary1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .header-box {
+            /* position: fixed;
                 top: 0;
                 right: auto; */
-                width: 90%;
-                height: 100px;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                border: none;
-            }
-            .logo img {
-                width: 250px;
-                height: auto;
-                display: flex;
-            }
-            .nav-bar ul{
-                display: flex;
-                flex-direction: row;
-                font-size: 1.2rem;
-                font-weight: 400;
-                list-style: none;
-                gap: 25px;  
-                cursor: pointer;
-            }
-            .buttons{
-                display: inline-flex;
-                gap: 0.8rem;
-            }
-            .icons{
-                width: 40px;
-                padding: 0.5rem;
-            }
-            .btn-primary1{
-                width: auto;
-                height: auto;
-                font-size: 1rem;
-                border: none;
-                text-align: center;
-                color: var(--text-color2);
-                background-color: var(--box-background-color);
-                margin: auto 0.3rem;
-                padding: 1rem 1.5rem;
-                cursor: pointer;
-            }
+            width: 90%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border: none;
+        }
+
+        .logo img {
+            width: 250px;
+            height: auto;
+            display: flex;
+        }
+
+        .nav-bar ul {
+            display: flex;
+            flex-direction: row;
+            font-size: 1.2rem;
+            font-weight: 400;
+            list-style: none;
+            gap: 25px;
+            cursor: pointer;
+        }
+
+        .buttons {
+            display: inline-flex;
+            gap: 0.8rem;
+        }
+
+        .icons {
+            width: 40px;
+            padding: 0.5rem;
+        }
+
+        .btn-primary1 {
+            width: auto;
+            height: auto;
+            font-size: 1rem;
+            border: none;
+            text-align: center;
+            color: var(--text-color2);
+            background-color: var(--box-background-color);
+            margin: auto 0.3rem;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+        }
 
 
 
-            header .hero{
-                display: inline-flex;
-                width: 90%;
-                height: auto;
-                margin: 1rem 5rem;
-                margin-top: 4rem;
-            }
-            .image2{
-                width: 45%;
-                height: auto;
-                margin-bottom: 8rem;
-                margin-left: 5rem;  
-            }
+        header .hero {
+            display: inline-flex;
+            width: 90%;
+            height: auto;
+            margin: 1rem 5rem;
+            margin-top: 4rem;
+        }
+
+        .image2 {
+            width: 45%;
+            height: auto;
+            margin-bottom: 8rem;
+            margin-left: 5rem;
+        }
 
 
 
-            .text-container{
-                position: relative;
-                width: 45%;
-                height: auto;
-                margin: 2rem 1rem;
-                margin-top: 8rem;
-                justify-content: center;
-                padding: auto 1rem;
-                height: auto;
-                text-align: start;  
+        .text-container {
+            position: relative;
+            width: 45%;
+            height: auto;
+            margin: 2rem 1rem;
+            margin-top: 8rem;
+            justify-content: center;
+            padding: auto 1rem;
+            height: auto;
+            text-align: start;
+        }
+
+        .card {
+            --bg-color: var(--primary-color);
+            background-color: var(--bg-color);
+            padding: 1rem 2rem;
+            border-radius: 1.25rem;;
+          
+        }
+
+        .loader {
+            color: rgb(124, 124, 124);
+            font-family: "Poppins", sans-serif;
+      
+            font-weight: 500;
+            font-size: 20px;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            height: 40px;
+            padding: 35px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            border-radius: 8px;
+        }
+
+        .words {
+            overflow: hidden;
+            position: relative;
+            
+            
+        }
+
+        .words::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(var(--bg-color) 10%, transparent 30%, transparent 70%, var(--bg-color) 90%);
+            z-index: 20;
+        }
+
+        .word {
+            display: block;
+            height: 100%;
+            margin-bottom: 10px;
+            padding-left: 6px;
+            color: #956afa;
+            animation: spin_4991 4s infinite;
+            
+        }
+
+        @keyframes spin_4991 {
+            10% {
+                -webkit-transform: translateY(-102%);
+                transform: translateY(-102%);
             }
+
+            25% {
+                -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+            }
+
+            35% {
+                -webkit-transform: translateY(-202%);
+                transform: translateY(-202%);
+            }
+
+            50% {
+                -webkit-transform: translateY(-200%);
+                transform: translateY(-200%);
+            }
+
+            60% {
+                -webkit-transform: translateY(-302%);
+                transform: translateY(-302%);
+            }
+
+            75% {
+                -webkit-transform: translateY(-300%);
+                transform: translateY(-300%);
+            }
+
+            85% {
+                -webkit-transform: translateY(-402%);
+                transform: translateY(-402%);
+            }
+
+            100% {
+                -webkit-transform: translateY(-400%);
+                transform: translateY(-400%);
+            }
+        }
+
+
+
+
             .text-container h2{
-                font-size: 3rem;
+                font-size: 2rem;
                 font-weight: lighter;
                 line-height: normal;
             }
-            .text-container .future{
-                font-size: 3.5rem;
+
+            .loader .future, p{
+                margin: auto;
+                padding: 20px;
+                
+            }
+            .loader .future{
+                margin-top: 10px;
+          
                 color: var(--text-color3);
                 line-height: normal;
                 font-weight: 700;
+                font-size: 2.5rem;
             }
-            .text-container h1{
-                font-size: 3.5rem;
+            .text-container .loader p{
+                font-size: 3rem;
                 font-weight: 700;
             }
             .text-container p{
@@ -134,12 +252,13 @@
                 font-weight: 400;
                 width: 80%;
             }
-            .btn{
+            .btn {
                 margin-top: 2rem;
                 padding: 1rem 2rem;
                 gap: 2rem;
             }
-            .btn-primary2{
+
+            .btn-primary2 {
                 width: 25%;
                 height: auto;
                 font-size: 1rem;
@@ -149,7 +268,8 @@
                 background-color: var(--box-background-color);
                 cursor: pointer;
             }
-            .btn-secondary{
+
+            .btn-secondary {
                 width: 25%;
                 height: auto;
                 font-size: 1rem;
@@ -159,7 +279,8 @@
                 background-color: var(--primary-color);
                 cursor: pointer;
             }
-            .search-Container{
+
+            .search-Container {
                 display: block;
                 width: 80%;
                 height: auto;
@@ -168,18 +289,20 @@
                 font-size: 1rem;
                 gap: 5px;
             }
-            .search-Container .input{
-                height: auto;   
+
+            .search-Container .input {
+                height: auto;
                 padding: 1rem 3.5rem;
                 font-size: 1rem;
                 border: none;
                 border-radius: 5px;
                 align-items: center;
-                box-shadow: 0 4px 10px rgb(0,0,0,0.2);
+                box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
             }
-            .search-Container .btn1{
+
+            .search-Container .btn1 {
                 position: absolute;
-                top: 22.2rem;
+                top: 22.7rem;
                 left: 2rem;
                 width: 60px;
                 font-size: 1rem;
@@ -187,9 +310,10 @@
                 padding: 1rem 0.2rem;
                 margin-right: 2rem;
             }
-            .text-container .vedio{
+
+            .text-container .vedio {
                 position: absolute;
-                top: 16.2rem;
+                top: 16.8rem;
                 left: 12.6rem;
                 width: 25px;
                 font-size: 1rem;
@@ -197,21 +321,23 @@
                 padding: 1rem 0.2rem;
                 margin-right: 2rem;
             }
-            .search-Container .Catogories{
+
+            .search-Container .Catogories {
                 border: none;
                 border-radius: 5px;
                 align-items: center;
-                box-shadow: 0 4px 10px rgb(0,0,0,0.2);
+                box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
                 padding: 1rem 3rem;
                 height: auto;
                 font-size: 1rem;
-            
+
             }
-            .search-Container .button{
+
+            .search-Container .button {
                 border: none;
                 border-radius: 5px;
                 align-items: center;
-                box-shadow: 0 4px 10px rgb(0,0,0,0.2);
+                box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
                 padding: 1rem 2.2rem;
                 height: auto;
                 border: none;
@@ -223,9 +349,9 @@
                 border: none;
                 gap: 0;
             }
-           
-           
-            .service{
+
+
+            .service {
                 width: 90%;
                 height: auto;
                 margin: 6rem auto;
@@ -234,83 +360,96 @@
                 padding: auto;
 
             }
-            .service h1{
+
+            .service h1 {
                 display: block;
                 text-align: center;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
                 font-weight: 500;
                 font-size: 3rem;
             }
-            .service-container{
+
+            .service-container {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
                 gap: 10px;
             }
 
-            .servicebox{
+            .servicebox {
                 padding: 3rem;
                 margin: 1rem auto;
 
             }
+
             .servicebox.box1 {
                 background-color: rgb(133, 133, 170);
 
             }
-            .servicebox.box2{
+
+            .servicebox.box2 {
                 background-color: rgb(138, 255, 42);
 
             }
-            .servicebox.box3{
+
+            .servicebox.box3 {
                 background-color: rgb(190, 175, 175);
 
             }
-            .servicebox.box4{
+
+            .servicebox.box4 {
                 background-color: rgb(161, 125, 196);
 
             }
-            .btn-service.ser1{
+
+            .btn-service.ser1 {
                 background-color: rgb(133, 133, 170);
             }
-            .btn-service.ser2{
+
+            .btn-service.ser2 {
                 background-color: rgb(138, 255, 42);
             }
-            .btn-service.ser3{
+
+            .btn-service.ser3 {
                 background-color: rgb(190, 175, 175);
             }
-            .btn-service.ser4{
+
+            .btn-service.ser4 {
                 background-color: rgb(161, 125, 196);
             }
 
-            .servicebox p, .btn-service{
+            .servicebox p,
+            .btn-service {
                 font-size: 1.1rem;
                 font-family: 'Lucida Sans Regular', sans-serif;
                 color: var(--text-color1);
-                text-align: start; 
+                text-align: start;
                 margin-top: 1.5rem;
-                border: none;   
+                border: none;
 
             }
-            .servicebox h2{
+
+            .servicebox h2 {
                 text-align: center;
                 font-weight: 400;
                 font-size: 1.5rem;
                 color: var(--text-color1);
             }
-         
-            .btn-service{
+
+            .btn-service {
                 text-decoration: underline;
             }
-        
 
-            .Courses-category-container{
+
+            .Courses-category-container {
                 width: 90%;
                 height: auto;
                 margin: 4rem auto;
                 justify-content: center;
                 align-items: center;
-            
+
             }
-            .Courses-category-container h1{
+
+            .Courses-category-container h1 {
                 display: block;
                 text-align: start;
                 font-family: 'Segoe UI', Verdana, sans-serif;
@@ -318,23 +457,27 @@
                 font-size: 2.5rem;
                 margin-bottom: 1rem;
             }
-            .Courses-category-container .Courses-category{
+
+            .Courses-category-container .Courses-category {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
                 margin: 2px 20px;
                 gap: 10px;
             }
-            .Courses-category .course{
+
+            .Courses-category .course {
                 width: 100%;
                 height: auto;
                 border: none;
-                margin:  1rem;
+                margin: 1rem;
                 padding: 2rem 4rem;
                 border-radius: 4px;
-                box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+                box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
                 background-color: var(--background-color);
             }
-            .Courses-category .course h2, p{
+
+            .Courses-category .course h2,
+            p {
                 display: block;
                 text-align: center;
                 justify-content: center;
@@ -342,44 +485,52 @@
                 color: var(--text-color1);
                 padding: 0.2rem 0.5rem;
             }
-            .Courses-category .course h2{
+
+            .Courses-category .course h2 {
                 font-size: 20px;
             }
-            .Courses-category .course p{
+
+            .Courses-category .course p {
                 font-weight: lighter;
                 font-size: 14px;
 
             }
 
 
-            .New-Courses{
+            .New-Courses {
                 width: 90%;
                 height: 750px;
                 margin: 1rem auto;
-            
-            }  
-            .New-Courses h2, h1{
+
+            }
+
+            .New-Courses h2,
+            h1 {
                 text-align: center;
                 color: var(--text-color1);
                 margin: 20px auto;
             }
-            .New-Courses h2{
+
+            .New-Courses h2 {
                 font-weight: lighter;
                 font-size: 1.5rem;
-                
+
             }
-            .New-Courses h1{
+
+            .New-Courses h1 {
                 font-weight: 600;
                 font-size: 2.5rem;
-                
+
             }
-            .New-Courses .buton{
+
+            .New-Courses .buton {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: 30px;
             }
-            .buton .buton{
+
+            .buton .buton {
                 width: 100px;
                 text-align: center;
                 font-size: 16px;
@@ -390,41 +541,49 @@
                 padding: 10px 20px;
                 cursor: pointer;
             }
-            .buton.bt1{
+
+            .buton.bt1 {
                 background-color: var(--box-background-color);
                 color: var(--text-color2);
             }
-            .buton.bt2{
+
+            .buton.bt2 {
                 background-color: var(--background-color);
                 color: var(--text-color1);
             }
-            .buton.bt3{
+
+            .buton.bt3 {
                 background-color: var(--background-color);
                 color: var(--text-color1);
             }
 
 
-            .New-Courses-container{
+            .New-Courses-container {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                 gap: 15px;
                 justify-content: space-between;
                 margin-top: 30px;
             }
-            .New-Courses-container .pic{
+
+            .New-Courses-container .pic {
                 width: 100%;
                 height: 50%;
             }
-            .New-Courses-container .course-box{
-                box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+
+            .New-Courses-container .course-box {
+                box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
                 border-radius: 8px;
-            }   
-            .course-box .teacher{
-                display: inline-flex;
-                gap: 10px;    
             }
-       
-            .New-Courses-container .course-box h4, h6, h1{
+
+            .course-box .teacher {
+                display: inline-flex;
+                gap: 10px;
+            }
+
+            .New-Courses-container .course-box h4,
+            h6,
+            h1 {
                 align-items: center;
                 color: #333;
                 margin: 5px 15px;
@@ -433,64 +592,73 @@
                 font-weight: lighter;
 
             }
-            .New-Courses-container .course-box h4{
+
+            .New-Courses-container .course-box h4 {
                 font-size: 14px;
                 align-items: center;
-                justify-content: start;     
+                justify-content: start;
             }
-            .New-Courses-container .course-box h6{
+
+            .New-Courses-container .course-box h6 {
                 font-size: 12px;
                 justify-content: end;
                 margin-left: 80px;
             }
-            .New-Courses-container h1{
+
+            .New-Courses-container h1 {
                 display: block;
                 font-weight: 600;
                 text-align: end;
                 font-size: 22px;
             }
-            .course-icon{
+
+            .course-icon {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
             }
-            .horizontal-line{
+
+            .horizontal-line {
                 width: 90%;
                 height: 4px;
                 margin: 10px auto;
                 justify-content: space-around;
                 background-color: var(--primary-color);
             }
-            .price-buy{
+
+            .price-buy {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 font-size: 12px;
                 font-weight: lighter;
             }
-            .price-buy h4{
+
+            .price-buy h4 {
                 margin: 5px 15px;
-                padding: 5px 10px;        
+                padding: 5px 10px;
 
             }
-            .price-buy .buy{
+
+            .price-buy .buy {
                 background-color: var(--box-background-color);
-                color: var(--text-color2); 
+                color: var(--text-color2);
                 margin: 5px 10px;
-                padding: 4px 15px;  
+                padding: 4px 15px;
                 border: none;
                 border-radius: 10px;
                 cursor: pointer;
             }
 
-            footer{
+            footer {
                 width: 100%;
                 text-align: center;
                 height: auto;
                 margin-bottom: 30px;
                 margin-top: 30px;
             }
-            footer .butons4{
+
+            footer .butons4 {
                 width: 100px;
                 height: auto;
                 font-size: 14px;
@@ -506,512 +674,585 @@
             }
 
             @media (max-width:768px) {
-                
+
                 /* qeybta header-box ka */
-                .header-box .nav-bar, .buttons, .btn-primary1{
+                .header-box .nav-bar,
+                .buttons,
+                .btn-primary1 {
                     display: none;
                 }
-                .header-box{
+
+                .header-box {
                     width: 100%;
                 }
+
                 .logo img {
                     width: 150px;
                 }
 
                 /* qeybta .hero ga */
-                header .hero{
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                margin: auto;
-                margin-top: 30px;
+                header .hero {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin: auto;
+                    margin-top: 30px;
+                }
+
+                .image2 {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 20px;
+                    padding: 20px auto;
+                    margin: auto;
+                }
+
+
+
+                .text-container {
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    margin: 10px;
+                    margin-top: 20px;
+                    justify-content: center;
+                    padding: auto;
+
+
+
+                }
+                .text-container h2{
+                font-size: 2rem;
+                font-weight: lighter;
+                line-height: normal;
             }
-            .image2{
-                display: block;
-                width: 100%;
-                height: auto;
-                margin-bottom: 20px;
-                padding: 20px auto;
-                margin: auto;
-            }
 
-
-
-            .text-container{
-                display: block;
-                position: relative;
-                width: 100%;
-                margin: 10px;
-                margin-top: 20px;
-                justify-content: center;
+            .loader .future, p{
                 padding: auto;
-       
-
-          
+                margin: auto;
+                
             }
-            .text-container h2{
-                font-size: 24px;
+            .loader .future{
+                font-size: 1.3rem;
             }
-            .text-container .future{
-                font-size: 32px;
-            }
-            .text-container h1{
-                font-size: 32px;
+            .text-container .loader p{
+                font-size: 1.2rem;
             }
             .text-container p{
-                font-size: 18px;
-                width: 90%;
-            }
-            .btn{
-                
-                margin-top: 20px;
-                padding: 10px 20px;
-                gap: 10px;
-            }
-            .btn-primary2{
-                width: 120px;
-                font-size: 14px;
-                
-            }
-            .btn-secondary{
-                width: 120px;
-                font-size: 14px;
-                
-            }
-            
-            .search-Container{
-                display: flex;
-                flex-direction: column;
-                margin-top: 15px;
-                font-size: 18px;
-                gap: 5px;
-            }
-            .search-Container .input{
-                padding: 15px;
-                text-align: center;
-                width: 100%;
-                font-size: 14px;
-            }
-            .search-Container .btn1{
-                position: absolute;
-                top: 18.4rem;
-                left: 0.8rem;
-                width: 60px;
                 font-size: 1rem;
-                height: auto;
-                padding: 1rem 0.2rem;
-                margin-right: 2rem;
-            }
-            .text-container .vedio{
-                position: absolute;
-                top: 14.4rem;
-                left: 7.6rem;
-                width: 25px;
-                
-            }
-            .search-Container .Catogories{
-                
-                padding: 15px;
-                font-size: 14px;
-            
-            }
-            .search-Container .button{
-                padding: 15px; 
-                font-size: 14px;
-            }
-            .search-Container .image2{
-                width: 90%;
-                margin-bottom: 10px;
-                margin-left: 5px;  
+                font-weight: 400;
+                width: 80%;
             }
 
-            /* qeybta services ka */
-            .service{
-                margin: 30px auto;
+                .text-container h2 {
+                    font-size: 24px;
+                }
+             
 
-            }
-            .service h1{
-                font-size: 28px;
-                margin-top: 150px;
-            }
-            .service-container{
-                display: block;
-                margin-bottom: 20px;
-                gap: 5px;
-            }
+                .btn {
 
-            .servicebox{
-                padding: 10px;
-                margin: 10px auto;
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    gap: 10px;
+                }
 
-            }
+                .btn-primary2 {
+                    width: 120px;
+                    font-size: 14px;
 
-            .servicebox p, .btn-service{
-                font-size: 16px; 
-                margin-top: 10px;
-            }
-            .servicebox h2{
-                font-size: 20px;
-            }
+                }
 
+                .btn-secondary {
+                    width: 120px;
+                    font-size: 14px;
 
-            /* qeybta Catogories courses ka */
-            .Courses-category-container{
-                width: 100%;
-                margin: 50px auto;
-            
-            }
-            .Courses-category-container h1{
-                font-size: 24px;
-                margin: 15px auto;
-            }
-            .Courses-category-container .Courses-category{
-                display: block;
-            }
-            .Courses-category .course{
-                width: 90%;
-                margin:  auto;
-                padding: 20px auto;
-                margin-bottom: 20px;
-            }
-            .Courses-category .course h2, p{
-                padding: 0.2rem 0.5rem;
-            }
-            .Courses-category .course h2{
-                font-size: 18px;
-            }
-            .Courses-category .course p{
-                font-weight: lighter;
-                font-size: 12px;
+                }
 
-            }
-            
-            /* qeybta new courses */
-            .New-Courses{
-                width: 90%;
-                height: auto;
-                margin: 20px auto;
+                .search-Container {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 15px;
+                    font-size: 18px;
+                    gap: 5px;
+                }
 
-            
-            }  
-            .New-Courses-container .course-box{
-                display: block;
-                margin-bottom: 20px;
-                height: 440px;
-                
-            }
-            .buton .buton{
-                border-radius: 8px;
-                padding: 10px;
-            }
-            .New-Courses h2, h1{
-                margin: 20px auto;
-            }
-            .New-Courses h2{
-                font-size: 20px;
-                
-            }
-            .New-Courses h1{
-                font-size: 28px;
-                
-            }
-            .New-Courses-container .course-box h4, h6, h1{
-                margin: 4px 10px;
-                padding: 5px 10px;
-                margin-bottom: 5px;
+                .search-Container .input {
+                    padding: 15px;
+                    text-align: center;
+                    width: 100%;
+                    font-size: 14px;
+                }
 
-            }
-            .New-Courses-container .course-box h4{
-                font-size: 14px;
-            }
-            .New-Courses-container .course-box h6{
-                font-size: 10px;
-                margin-left: 80px;
-            }
-            .New-Courses-container h1{
-                display: block;
-                font-weight: 600;
-                text-align: end;
-                font-size: 18px;
-            }
-          
-            .price-buy{
-                font-size: 10px;
-            
-            }
-            
+                .search-Container .btn1 {
+                    position: absolute;
+                    top: 23.4rem;
+                    left: 0.8rem;
+                    width: 60px;
+                    font-size: 1rem;
+                    height: auto;
+                    padding: 1rem 0.2rem;
+                    margin-right: 2rem;
+                }
 
-            /* footerka */
-            footer{
-                display: block;
-            }
-            footer .butons4{
-                border-radius: 8px;
-            }
+                .text-container .vedio {
+                    position: absolute;
+                    top: 20rem;
+                    left: 7.6rem;
+                    width: 25px;
 
-          
-        
+                }
+
+                .search-Container .Catogories {
+
+                    padding: 15px;
+                    font-size: 14px;
+
+                }
+
+                .search-Container .button {
+                    padding: 15px;
+                    font-size: 14px;
+                }
+
+                .search-Container .image2 {
+                    width: 90%;
+                    margin-bottom: 10px;
+                    margin-left: 5px;
+                }
+
+                /* qeybta services ka */
+                .service {
+                    margin: 30px auto;
+
+                }
+
+                .service h1 {
+                    font-size: 28px;
+                    margin-top: 150px;
+                }
+
+                .service-container {
+                    display: block;
+                    margin-bottom: 20px;
+                    gap: 5px;
+                }
+
+                .servicebox {
+                    padding: 10px;
+                    margin: 10px auto;
+
+                }
+
+                .servicebox p,
+                .btn-service {
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+
+                .servicebox h2 {
+                    font-size: 20px;
+                }
 
 
-            
+                /* qeybta Catogories courses ka */
+                .Courses-category-container {
+                    width: 100%;
+                    margin: 50px auto;
+
+                }
+
+                .Courses-category-container h1 {
+                    font-size: 24px;
+                    margin: 15px auto;
+                }
+
+                .Courses-category-container .Courses-category {
+                    display: block;
+                }
+
+                .Courses-category .course {
+                    width: 90%;
+                    margin: auto;
+                    padding: 20px auto;
+                    margin-bottom: 20px;
+                }
+
+                .Courses-category .course h2,
+                p {
+                    padding: 0.2rem 0.5rem;
+                }
+
+                .Courses-category .course h2 {
+                    font-size: 18px;
+                }
+
+                .Courses-category .course p {
+                    font-weight: lighter;
+                    font-size: 12px;
+
+                }
+
+                /* qeybta new courses */
+                .New-Courses {
+                    width: 90%;
+                    height: auto;
+                    margin: 20px auto;
+
+
+                }
+
+                .New-Courses-container .course-box {
+                    display: block;
+                    margin-bottom: 20px;
+                    height: 440px;
+
+                }
+
+                .buton .buton {
+                    border-radius: 8px;
+                    padding: 10px;
+                }
+
+                .New-Courses h2,
+                h1 {
+                    margin: 20px auto;
+                }
+
+                .New-Courses h2 {
+                    font-size: 20px;
+
+                }
+
+                .New-Courses h1 {
+                    font-size: 28px;
+
+                }
+
+                .New-Courses-container .course-box h4,
+                h6,
+                h1 {
+                    margin: 4px 10px;
+                    padding: 5px 10px;
+                    margin-bottom: 5px;
+
+                }
+
+                .New-Courses-container .course-box h4 {
+                    font-size: 14px;
+                }
+
+                .New-Courses-container .course-box h6 {
+                    font-size: 10px;
+                    margin-left: 80px;
+                }
+
+                .New-Courses-container h1 {
+                    display: block;
+                    font-weight: 600;
+                    text-align: end;
+                    font-size: 18px;
+                }
+
+                .price-buy {
+                    font-size: 10px;
+
+                }
+
+
+                /* footerka */
+                footer {
+                    display: block;
+                }
+
+                footer .butons4 {
+                    border-radius: 8px;
+                }
+
+
+
+
+
+
 
             }
+    </style>
 
-                  
-        </style>
+</head>
 
-    </head>
-    <body>
-        <header>
-            <div class="header-box">
-                <div class="logo">
-                    <img src="./images/THE-SKILL__1_-removebg-preview.png" class="image1" alt="image1">
-                </div>
-
-                <nav class="nav-bar">
-                    <ul>
-                        <li>Home</li>
-                        <li>Courses</li>
-                        <li>Classes</li>
-                        <li>instructors</li>
-                        <li>About Us</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
-                <div class="buttons">
-                    <img src="./images/headset-solid.svg" class="icons" alt="headset icon"> 
-                    <img src="./images/user-regular (1).svg" class="icons" alt="user icon"> 
-                    
-                    <button class="btn-primary1">My Courses</button>
-                </div>
+<body>
+    <header>
+        <div class="header-box">
+            <div class="logo">
+                <img src="./images/THE-SKILL__1_-removebg-preview.png" class="image1" alt="image1">
             </div>
 
-            <div class="hero">
-                <div class="text-container">
-                    <h2>Grow your skills,</h2>
-                    <h1>Build your <span class="future">future</span></h1>
-                    <p>we collaborate to ensure every student achieves academic, social, and
-                        emotional success by working together and providing comprehensive support
+            <nav class="nav-bar">
+                <ul>
+                    <li>Home</li>
+                    <li>Courses</li>
+                    <li>Classes</li>
+                    <li>instructors</li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <img src="./images/headset-solid.svg" class="icons" alt="headset icon">
+                <img src="./images/user-regular (1).svg" class="icons" alt="user icon">
+
+                <button class="btn-primary1">My Courses</button>
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="text-container">
+                <h2>Grow your skills,</h2>
+                <!-- <h1>Build your <span class="future">future</span></h1> -->
+                
+                <div class="card flex">
+                    <div class="loader">
+                        <p>Build your </p>
+                        <div class="words">
+                            <span class="word future">future</span>
+                            <span class="word  future">success</span>
+                            <span class="word future">knowledge</span>
+                           
+                        </div>
+                    </div>
+                </div>
+                <p>we collaborate to ensure every student achieves academic, social, and
+                    emotional success by working together and providing comprehensive support
+                </p>
+
+                <button class="btn-primary2  btn">Get Started</button>
+                <button class="btn-secondary  btn"><img src="./images/play-button.png" class="vedio"> Watch
+                    Video</button>
+
+
+                <div class="search-Container">
+                    <input type="text" placeholder="Course Name..." class="input">
+                    <i class="fa-solid fa-magnifying-glass  btn1"></i>
+
+                    <select class="Catogories">
+                        <option>All Catogories</option>
+                        <option>Design</option>
+                        <option>Marketing & SEO</option>
+                        <option>Networking</option>
+                        <option>3D Animation</option>
+                        <option>UI UX Design </option>
+                        <option>Forieng Languages</option>
+                        <option>Technology </option>
+                    </select>
+
+                    <button class="button"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+
+
+                </div>
+            </div>
+            <img src="./images/freepik__adjust__71385-removebg-preview.png" class="image2" alt="image2" />
+
+        </div>
+
+
+
+
+
+
+    </header>
+
+    <main>
+        <section class="service">
+            <h1>Our Best Service</h1>
+            <div class="service-container">
+                <div class="servicebox box1">
+                    <h2><i class="fa-regular fa-chess-queen"></i> Expert instructor</h2>
+                    <p>Expert instructor knowledgeoable experienced, and
+                        provides quality education and guidance
                     </p>
-                    <button class="btn-primary2  btn" >Get Started</button>
-                    <button class="btn-secondary  btn"><img src="./images/play-button.png" class="vedio"> Watch Video</button>
-
-
-                    <div class="search-Container">
-                        <input type="text" placeholder="Course Name..." class="input" >
-                        <i class="fa-solid fa-magnifying-glass  btn1"></i>
-                        
-                        <select class="Catogories">
-                            <option>All Catogories</option>
-                            <option>Design</option>
-                            <option>Marketing & SEO</option>
-                            <option>Networking</option>
-                            <option>3D Animation</option>
-                            <option>UI UX Design </option>
-                            <option>Forieng Languages</option>
-                            <option>Technology </option>
-                        </select>
-                        
-                        <button class="button"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-
-
-                    </div>
+                    <button class="btn-service ser1">Read More</button>
                 </div>
-                <img src="./images/freepik__adjust__71385-removebg-preview.png" class="image2" alt="image2" />
-                
+                <div class="servicebox box2">
+                    <h2><i class="fa-regular fa-clock"></i> 24/7 Support</h2>
+                    <p>Expert instructor knowledgeoable experienced, and
+                        provides quality education and guidance
+                    </p>
+                    <button class="btn-service ser2">Read More</button>
+                </div>
+                <div class="servicebox box3">
+                    <h2><i class="fa-solid fa-person-chalkboard"></i> Expert Teachers</h2>
+                    <p>Expert instructor knowledgeoable experienced, and
+                        provides quality education and guidance
+                    </p>
+                    <button class="btn-service ser3">Read More</button>
+                </div>
+                <div class="servicebox box4">
+                    <h2><i class="fa-solid fa-graduation-cap"></i> Learn AnyWhere</h2>
+                    <p>Expert instructor knowledgeoable experienced, and
+                        provides quality education and guidance
+                    </p>
+                    <button class="btn-service ser4">Read More</button>
+                </div>
+
             </div>
 
+        </section>
 
-            
-            
-      
+        <section class="Courses-category-container">
+            <h1>Explore Courses by Catogories</h1>
+            <div class="Courses-category">
+                <div class="course">
+                    <h2><i class="fa-solid fa-layer-group"></i> 3D + Animation</h2>
+                    <p> 205+ Courses</p>
 
-        </header>
+                </div>
+                <div class="course">
+                    <h2><i class="fa-solid fa-code"></i> Development</h2>
+                    <p> 267+ Courses</p>
 
-        <main>
-            <section class="service">
-                <h1>Our Best Service</h1>
-                <div class="service-container">
-                    <div class="servicebox box1">
-                        <h2><i class="fa-regular fa-chess-queen"></i>  Expert instructor</h2>
-                        <p>Expert instructor knowledgeoable experienced, and 
-                            provides quality education and guidance
-                        </p>
-                        <button class="btn-service ser1">Read More</button>
+                </div>
+                <div class="course">
+                    <h2><i class="fa-solid fa-brain"></i> Technology</h2>
+                    <p> 222+ Courses</p>
+
+                </div>
+                <div class="course">
+                    <h2><i class="fa-solid fa-magnifying-glass-chart"></i> Marketing & SEO</h2>
+                    <p> 202+ Courses</p>
+
+                </div>
+                <div class="course">
+                    <h2><i class="fa-solid fa-language"></i> Languages</h2>
+                    <p> 267+ Courses</p>
+
+                </div>
+                <div class="course">
+                    <h2><i class="fa-solid fa-suitcase-medical"></i> Health & Fitnes</h2>
+                    <p> 82+ Courses</p>
+
+                </div>
+                <div class="course">
+                    <h2><i class="fa-solid fa-pen-nib"></i> UI UX Design</h2>
+                    <p> 497+ Courses</p>
+
+                </div>
+                <div class="course">
+                    <h2><i class="fa-solid fa-magnet"></i> Social Marketing</h2>
+                    <p> 1367+ Courses</p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="New-Courses">
+            <h2>Our New Courses</h2>
+            <h1>Learn Best Things</h1>
+
+            <div class="buton">
+                <button class="buton   bt1"><a style="color: antiquewhite; text-decoration: none;" href="./viewAll.html"
+                        target="_blank">All</a> </button>
+                <button class="buton   bt2"><a style="text-decoration: none;" href="./paid.html"
+                        target="_blank">Paid</a> </button>
+                <button class="buton   bt3"><a style="text-decoration: none; " href="./free.html"
+                        target="_blank">Free</a> </button>
+
+            </div>
+
+            <div class="New-Courses-container">
+                <div class="course-box">
+                    <img src="https://www.shutterstock.com/image-photo/smiling-african-man-using-laptop-600nw-2294125691.jpg"
+                        class="pic" alt="pic">
+                    <div class="teacher">
+                        <h4>Mohamed</h4>
+                        <h6><i class="fa-solid fa-star"></i> 4.5(5.2k)</h6>
                     </div>
-                    <div class="servicebox box2">
-                        <h2><i class="fa-regular fa-clock"></i>  24/7 Support</h2>
-                        <p>Expert instructor knowledgeoable experienced, and 
-                            provides quality education and guidance
-                        </p>
-                        <button class="btn-service ser2">Read More</button>
+                    <h1>Complete Introduction of Com...</h1>
+                    <div class="course-icon">
+                        <h5><i class="fa-solid fa-book-open"></i> 1150</h5>
+                        <h5><i class="fa-solid fa-graduation-cap"></i> 600 </h5>
+                        <h5><i class="fa-solid fa-clock"></i> 3hr 30min</h5>
+
                     </div>
-                    <div class="servicebox box3">
-                        <h2><i class="fa-solid fa-person-chalkboard"></i>  Expert Teachers</h2>
-                        <p>Expert instructor knowledgeoable experienced, and 
-                            provides quality education and guidance
-                        </p>
-                        <button class="btn-service ser3">Read More</button>
+                    <div class="horizontal-line"></div>
+                    <div class="price-buy">
+                        <h4> $0.00</h4>
+                        <button class="buy">Free</button>
                     </div>
-                    <div class="servicebox box4">
-                        <h2><i class="fa-solid fa-graduation-cap"></i>  Learn AnyWhere</h2>
-                        <p>Expert instructor knowledgeoable experienced, and 
-                            provides quality education and guidance
-                        </p>
-                        <button class="btn-service ser4">Read More</button>
+                </div>
+                <div class="course-box">
+                    <img src="https://www.rmcad.edu/wp-content/uploads/2024/04/shutterstock_434383288.jpg" class="pic"
+                        alt="pic">
+                    <div class="teacher">
+                        <h4>joon cooper </h4>
+                        <h6><i class="fa-solid fa-star"></i> 4.8(1k)</h6>
+                    </div>
+                    <h1>Complete Graphic Design co....</h1>
+                    <div class="course-icon">
+                        <h5><i class="fa-solid fa-book-open"></i> 1200</h5>
+                        <h5><i class="fa-solid fa-graduation-cap"></i> 203</h5>
+                        <h5><i class="fa-solid fa-clock"></i> 15hr 20min</h5>
+
+                    </div>
+                    <div class="horizontal-line"></div>
+                    <div class="price-buy">
+                        <h4> $90.00</h4>
+                        <button class="buy">Paid</button>
                     </div>
 
                 </div>
-                
-            </section>
+                <div class="course-box">
+                    <img src="https://blog.wei.com/hubfs/network.jpg" class="pic" alt="pic">
+                    <div class="teacher">
+                        <h4>loslio sandera </h4>
+                        <h6><i class="fa-solid fa-star"></i> 5.0(1.1k)</h6>
+                    </div>
+                    <h1>Complete Network Fundema....</h1>
+                    <div class="course-icon">
+                        <h5><i class="fa-solid fa-book-open"></i> 1504</h5>
+                        <h5><i class="fa-solid fa-graduation-cap"></i> 1003</h5>
+                        <h5><i class="fa-solid fa-clock"></i> 1hr 30min</h5>
 
-            <section class="Courses-category-container">
-                <h1>Explore Courses by Catogories</h1>
-                <div class="Courses-category">
-                    <div class="course">
-                        <h2><i class="fa-solid fa-layer-group"></i> 3D + Animation</h2>
-                        <p> 205+ Courses</p>
-  
                     </div>
-                    <div class="course">
-                        <h2><i class="fa-solid fa-code"></i> Development</h2>
-                        <p> 267+ Courses</p>
-  
+                    <div class="horizontal-line"></div>
+                    <div class="price-buy">
+                        <h4> $20.00</h4>
+                        <button class="buy">Paid</button>
                     </div>
-                    <div class="course">
-                        <h2><i class="fa-solid fa-brain"></i> Technology</h2>
-                        <p> 222+ Courses</p>
-  
+                </div>
+                <div class="course-box">
+                    <img src="https://cdn.prod.website-files.com/6344c9cef89d6f2270a38908/673f2a3b44c1ed4901bb43bb_6386328bea96dffacc89946b_d1.webp"
+                        class="pic" alt="pic">
+                    <div class="teacher">
+                        <h4>Alex willian</h4>
+                        <h6><i class="fa-solid fa-star"></i> 5.0(12k)</h6>
                     </div>
-                    <div class="course">
-                        <h2><i class="fa-solid fa-magnifying-glass-chart"></i> Marketing & SEO</h2>
-                        <p> 202+ Courses</p>
-  
+                    <h1>Complete Web Developer co....</h1>
+                    <div class="course-icon">
+                        <h5><i class="fa-solid fa-book-open"></i> 12030</h5>
+                        <h5><i class="fa-solid fa-graduation-cap"></i> 1107</h5>
+                        <h5><i class="fa-solid fa-clock"></i> 19hr 22min</h5>
+
                     </div>
-                    <div class="course">
-                        <h2><i class="fa-solid fa-language"></i> Languages</h2>
-                        <p> 267+ Courses</p>
-  
+                    <div class="horizontal-line"></div>
+                    <div class="price-buy">
+                        <h4> $100.00</h4>
+                        <button class="buy">paid</button>
                     </div>
-                    <div class="course">
-                        <h2><i class="fa-solid fa-suitcase-medical"></i> Health & Fitnes</h2>
-                        <p> 82+ Courses</p>
-  
-                    </div>
-                    <div class="course">
-                        <h2><i class="fa-solid fa-pen-nib"></i> UI UX Design</h2>
-                        <p> 497+ Courses</p>
-  
-                    </div>
-                    <div class="course">
-                        <h2><i class="fa-solid fa-magnet"></i> Social Marketing</h2>
-                        <p> 1367+ Courses</p>
-  
-                    </div>
-                    
 
                 </div>
-                
-            </section>
 
-            <section class="New-Courses">
-                <h2>Our New Courses</h2>
-                <h1>Learn Best Things</h1>
+        </section>
 
-                <div class="buton">
-                    <button class="buton   bt1"><a  style="color: antiquewhite; text-decoration: none;" href="./viewAll.html" target="_blank">All</a> </button>
-                    <button class="buton   bt2"><a  style= "text-decoration: none;" href="./paid.html" target="_blank">Paid</a> </button>
-                    <button class="buton   bt3"><a  style="text-decoration: none; " href="./free.html" target="_blank">Free</a> </button>
-                    
-                </div>
+    </main>
+    <footer>
+        <button class="butons4"><a style="color: wheat; text-decoration: none;" href="./viewAll.html"> View
+                All</a></button>
+    </footer>
 
-                <div class="New-Courses-container">
-                    <div class="course-box">
-                        <img src="https://www.shutterstock.com/image-photo/smiling-african-man-using-laptop-600nw-2294125691.jpg" class="pic" alt="pic">
-                        <div class="teacher">
-                            <h4>Mohamed</h4>
-                            <h6><i class="fa-solid fa-star"></i> 4.5(5.2k)</h6>
-                        </div>
-                        <h1>Complete Introduction of Com...</h1>
-                        <div class="course-icon">
-                            <h5><i class="fa-solid fa-book-open"></i> 1150</h5>
-                            <h5><i class="fa-solid fa-graduation-cap"></i> 600 </h5>
-                            <h5><i class="fa-solid fa-clock"></i> 3hr 30min</h5>
 
-                        </div>
-                        <div class="horizontal-line"></div>
-                        <div class="price-buy">
-                            <h4> $0.00</h4>
-                            <button class="buy">Free</button>
-                        </div> 
-                    </div>
-                    <div class="course-box">
-                        <img src="https://www.rmcad.edu/wp-content/uploads/2024/04/shutterstock_434383288.jpg" class="pic" alt="pic">
-                        <div class="teacher">
-                            <h4>joon cooper </h4>
-                            <h6><i class="fa-solid fa-star"></i> 4.8(1k)</h6>
-                        </div>
-                        <h1>Complete Graphic Design co....</h1>
-                        <div class="course-icon">
-                            <h5><i class="fa-solid fa-book-open"></i> 1200</h5>
-                            <h5><i class="fa-solid fa-graduation-cap"></i> 203</h5>
-                            <h5><i class="fa-solid fa-clock"></i> 15hr 20min</h5>
+</body>
 
-                        </div>
-                        <div class="horizontal-line"></div>
-                        <div class="price-buy">
-                            <h4> $90.00</h4>
-                            <button class="buy">Paid</button>
-                        </div>
-                  
-                    </div>
-                    <div class="course-box">
-                        <img src="https://blog.wei.com/hubfs/network.jpg" class="pic" alt="pic">
-                        <div class="teacher">
-                            <h4>loslio sandera </h4>
-                            <h6><i class="fa-solid fa-star"></i> 5.0(1.1k)</h6>
-                        </div>
-                        <h1>Complete Network Fundema....</h1>
-                        <div class="course-icon">
-                            <h5><i class="fa-solid fa-book-open"></i> 1504</h5>
-                            <h5><i class="fa-solid fa-graduation-cap"></i> 1003</h5>
-                            <h5><i class="fa-solid fa-clock"></i> 1hr 30min</h5>
-
-                        </div>
-                        <div class="horizontal-line"></div>
-                        <div class="price-buy">
-                            <h4> $20.00</h4>
-                            <button class="buy">Paid</button>
-                        </div> 
-                    </div>
-                    <div class="course-box">
-                        <img src="https://cdn.prod.website-files.com/6344c9cef89d6f2270a38908/673f2a3b44c1ed4901bb43bb_6386328bea96dffacc89946b_d1.webp" class="pic" alt="pic">
-                        <div class="teacher">
-                            <h4>Alex willian</h4>
-                            <h6><i class="fa-solid fa-star"></i> 5.0(12k)</h6>
-                        </div>
-                        <h1>Complete Web Developer co....</h1>
-                        <div class="course-icon">
-                            <h5><i class="fa-solid fa-book-open"></i> 12030</h5>
-                            <h5><i class="fa-solid fa-graduation-cap"></i> 1107</h5>
-                            <h5><i class="fa-solid fa-clock"></i> 19hr 22min</h5>
-
-                        </div>
-                        <div class="horizontal-line"></div>
-                        <div class="price-buy">
-                            <h4> $100.00</h4>
-                            <button class="buy">paid</button>
-                        </div>
-
-                    </div>  
-
-            </section>
-
-        </main>
-        <footer>
-            <button class="butons4"><a style="color: wheat; text-decoration: none;" href="./viewAll.html"> View All</a></button>
-        </footer>  
-      
-
-    </body>
 </html>
